@@ -22,7 +22,7 @@
                             <label for="name" class="form-label fw-semibold small text-muted">Full Name</label>
                             <div class="input-group">
                                 <span class="input-group-text bg-light border-end-0 text-muted"><i class="bi bi-person"></i></span>
-                                <input id="name" type="text" class="form-control bg-light border-start-0 ps-0 @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autofocus autocomplete="name" placeholder="John Doe">
+                                <input id="name" type="text" class="form-control bg-light border-start-0 ps-0 @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autofocus autocomplete="name" >
                             </div>
                             <x-input-error :messages="$errors->get('name')" class="mt-2 text-danger small" />
                         </div>
@@ -31,7 +31,7 @@
                             <label for="email" class="form-label fw-semibold small text-muted">Email Address</label>
                             <div class="input-group">
                                 <span class="input-group-text bg-light border-end-0 text-muted"><i class="bi bi-envelope"></i></span>
-                                <input id="email" type="email" class="form-control bg-light border-start-0 ps-0 @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="username" placeholder="you@example.com">
+                                <input id="email" type="email" class="form-control bg-light border-start-0 ps-0 @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="username">
                             </div>
                             <x-input-error :messages="$errors->get('email')" class="mt-2 text-danger small" />
                         </div>
